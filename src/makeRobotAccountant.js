@@ -10,14 +10,14 @@ function makeRobotAccountant() {
   let callCounter = 0;
 
   const getSum = (num) => {
-    callCounter++;
+    return (secondnumber) => {
+      callCounter++;
 
-    return (operator) => {
       if (callCounter > 3 && callCounter % 2 === 0) {
         return 'Bzzz... Error!';
       }
 
-      return num + operator;
+      return num + secondnumber;
     };
   };
 
